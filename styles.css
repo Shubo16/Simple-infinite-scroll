@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --head-color: hsla(0, 0%, 13%, 1);
+  --pastel-purple: #c4baf4;
+  --pastel-pink: #ff97ac;
+
+  --content-color: hsla(0, 0%, 13%, 1);
+  --greyish: hsla(0, 2%, 44%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 20rem;
+  animation: scroll 10s linear infinite;
+  justify-items: stretch;
+ 
+}
+
+
+
+
+@keyframes scroll {
+  to {
+    translate: calc(-4 * 20rem);
+  }
+}
